@@ -1,0 +1,7 @@
+# ANIMATE
+# Unsupervised Attributed Graph Anomaly Detection
+# with Masked Graph Transformers
+
+numpy>=1.21.6
+scipy>=1.7.3
+scikit-learn>=0.24.1
