@@ -20,6 +20,10 @@ build/
 dist/
 *.egg-info/
 
+# Converted CSV files
+csvs/
+
+
 # OS
 .DS_Store
 Thumbs.db
