@@ -1,7 +1,67 @@
+# ============================================================
 # ANIMATE
 # Unsupervised Attributed Graph Anomaly Detection
 # with Masked Graph Transformers
+#
+# Tested Windows baseline:
+# Python 3.10.11 (64-bit)
+# PyTorch 2.1.2 CPU
+# PyG 2.4.0
+# DGL 2.2.1
+# ============================================================
 
-numpy>=1.21.6
-scipy>=1.7.3
-scikit-learn>=0.24.1
+# ------------------------------------------------------------
+# PyTorch CPU
+# ------------------------------------------------------------
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.2+cpu
+torchvision==0.16.2+cpu
+torchaudio==2.1.2+cpu
+
+# ------------------------------------------------------------
+# Core numerical / ML dependencies
+# ------------------------------------------------------------
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas>=1.5,<3.0
+tqdm==4.70.1
+networkx>=2.8,<4.0
+PyYAML>=6.0,<7.0
+requests>=2.28,<3.0
+psutil>=5.8
+
+# ------------------------------------------------------------
+# PyTorch Geometric
+#
+# The -f URL provides the prebuilt Windows CPU wheels for
+# the PyTorch 2.1.x ABI.
+# ------------------------------------------------------------
+-f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+
+torch-geometric==2.4.0
+pyg_lib==0.4.0+pt21cpu
+torch-scatter==2.1.2+pt21cpu
+torch-sparse==0.6.18+pt21cpu
+torch-cluster==1.6.3+pt21cpu
+torch-spline-conv==1.2.2+pt21cpu
+
+# ------------------------------------------------------------
+# DGL
+# ------------------------------------------------------------
+dgl==2.2.1
+torchdata==0.7.1
+
+# ------------------------------------------------------------
+# Cython extension used by algos.pyx
+#
+# Cython 0.29.36 is intentionally pinned because the original
+# algos.pyx uses syntax/types that can fail with newer Cython.
+# ------------------------------------------------------------
+Cython==0.29.36
+
+# ------------------------------------------------------------
+# Packaging / native build support
+# ------------------------------------------------------------
+setuptools<70
+wheel
