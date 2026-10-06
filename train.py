@@ -49,11 +49,14 @@ def main(args):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
+
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.cuda.manual_seed_all(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
+    if torch.cuda.is_available():
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
     
     
     dataset = GraphDataModule(args)
@@ -142,7 +145,7 @@ def main(args):
                 # recon_mask = recon_mask[pad_mask, :].squeeze()
 
                 # -----------------SP------------------#
-                weights = torch.ones(x_mask.size(0)).cuda().type(torch.cuda.FloatTensor)
+                weights = torch.ones(x_mask.size(0), device=x_mask.device, dtype=torch.float32)
                 # select = (shrink_rate > 0)
                 if epoch >= warmup_epoch and args.select:
                     model.eval()

@@ -1,15 +1,13 @@
 from load_pygData import *
 import torch.nn.functional as F
 from sklearn.impute import SimpleImputer, KNNImputer
-import pyximport
-# pyximport.install()
-pyximport.install(setup_args={"include_dirs": np.get_include()})
+
 import algos
 
 from torch_geometric.utils import to_undirected
 from torch_geometric.transforms import NormalizeFeatures
 import torch_geometric.utils as ut
-from sklearn.preprocessing import StandardScaler,MinMaxScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 
 real_data_list = ['Disney', 'Books', 'Reddit', 'Weibo', 'Enron', 'inj_amazon', 'Yelp', 'Elliptic']
