@@ -736,3 +736,14 @@ python train.py --dataset_name Books
 **ANIMATE: Unsupervised Attributed Graph Anomaly Detection with Masked Graph Transformers**
 
 This repository is intended for research, experimentation, reproducibility, and further development of graph anomaly detection using attributed graphs and masked graph transformer architectures.
+
+---
+
+## 21. Contributors
+
+| Name | GitHub Profile | Email |
+| --- | --- | --- |
+| ANIRBAN RAY | https://github.com/AnirbanRay20 | anirbanmark1429@gmail.com |
+| Contributor 2 |  |  |
+| Contributor 3 |  |  |
+| Contributor 4 |  |  |
