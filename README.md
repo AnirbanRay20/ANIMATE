@@ -744,6 +744,6 @@ This repository is intended for research, experimentation, reproducibility, and 
 | Name | GitHub Profile | Email |
 | --- | --- | --- |
 | ANIRBAN RAY | https://github.com/AnirbanRay20 | anirbanmark1429@gmail.com |
-| Contributor 2 |  |  |
-| Contributor 3 |  |  |
-| Contributor 4 |  |  |
+| ANUSMITA RAY CHAUDHURI |  |  |
+| ANKAN GHOSH |  |  |
+| ABIR PRAMANICK |  |  |
