@@ -65,7 +65,7 @@ Write-Host "[4/7] Updating pip/setuptools/wheel..." -ForegroundColor Yellow
 # ------------------------------------------------------------
 Write-Host "[5/7] Installing ANIMATE dependencies..." -ForegroundColor Yellow
 
-& ".\venv310\Scripts\python.exe" -m pip install -r requirements.txt
+& ".\venv310\Scripts\python.exe" -m pip install --no-cache-dir -r requirements.txt
 
 # ------------------------------------------------------------
 # Verification
