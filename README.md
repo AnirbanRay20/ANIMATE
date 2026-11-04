@@ -746,4 +746,4 @@ This repository is intended for research, experimentation, reproducibility, and 
 | ANIRBAN RAY | https://github.com/AnirbanRay20 | anirbanmark1429@gmail.com |
 | ANUSMITA RAY CHAUDHURI |  |   |
 | ANKAN GHOSH | https://github.com/ankan288 | ankanghosh156@gmail.com |
-| ABIR PRAMANICK |  |  |
+| ABIR PRAMANICK | https://github.com/Abir-2005 | abirpramanick1@gmail.com |
