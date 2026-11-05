@@ -194,6 +194,7 @@ def main(args):
                 recon_loss = recon_loss / recon_loss_nonzero
                 # recon_loss = loss_mask @ weights / x_mask.size(0) / x_mask.size(1)
 
+                optimizer.zero_grad()
                 recon_loss.backward()
                 optimizer.step()
 
