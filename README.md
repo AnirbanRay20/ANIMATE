@@ -46,7 +46,7 @@ ANIMATE/
 │   ├── Books
 │   ├── Disney
 │   ├── Reddit
-│   └── Yelp
+│   
 │
 ├── algos.pyx
 ├── load_data.py
@@ -279,11 +279,11 @@ The original ANIMATE project provides the supported datasets:
 - Books
 - Disney
 - Reddit
-- Yelp
+
 
 If your fork already contains the datasets, no additional download is required.
 
-The original project also notes that `Yelp.pt` can be obtained from the PyGOD repository.
+
 
 ---
 
@@ -317,11 +317,7 @@ python train.py --dataset_name Disney
 python train.py --dataset_name Reddit
 ```
 
-### Yelp
 
-```powershell
-python train.py --dataset_name Yelp
-```
 
 ---
 
@@ -696,7 +692,7 @@ The original usage pattern is:
 python train.py --dataset_name Books
 python train.py --dataset_name Disney
 python train.py --dataset_name Reddit
-python train.py --dataset_name Yelp
+
 ```
 
 This fork adds the reproducible Windows setup, dependency pinning, Cython/compiler setup notes, CPU environment notes, verification commands, and troubleshooting instructions required to reproduce the tested setup.
